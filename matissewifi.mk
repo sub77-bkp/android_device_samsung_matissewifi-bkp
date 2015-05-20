@@ -35,6 +35,11 @@ TARGET_SCREEN_WIDTH := 800
 
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
+# TWRP
+PRODUCT_COPY_FILES += \
+	device/samsung/matissewifi/rootdir/twrp.fstab:recovery/root/etc/twrp.fstab \
+    device/samsung/matissewifi/curtain.jpg:recovery/root/twres/images/curtain.jpg
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml \
