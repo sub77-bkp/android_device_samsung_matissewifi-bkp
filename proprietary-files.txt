@@ -33,7 +33,7 @@ vendor/lib/libbtnv.so
 
 # Camera
 bin/mm-qcamera-daemon
-lib/hw/camera.msm8226.so
+lib/hw/camera.msm8226.so:lib/hw/camera.vendor.msm8226.so
 lib/libarcsoft_flawlessface.so
 #lib/libarcsoft_night_shot.so
 lib/libarcsoft_panorama_burstcapture.so

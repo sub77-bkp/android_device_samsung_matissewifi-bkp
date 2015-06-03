@@ -62,5 +62,9 @@ PRODUCT_PACKAGES += \
     libsecril-client \
     libsecril-client-sap
 
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.secure=0 \
+    ro.adb.secure=0
+
 # Inherit from qcom-common
 $(call inherit-product, device/samsung/msm8226-common/msm8226.mk)

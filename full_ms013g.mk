@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/samsung/ms013g/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := matissewifi
+PRODUCT_DEVICE := ms013g
 PRODUCT_NAME := full_ms013g
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-T530
