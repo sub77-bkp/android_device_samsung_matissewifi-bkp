@@ -23,7 +23,7 @@ PRODUCT_PACKAGES += \
     charger
 
 PRODUCT_COPY_FILES += \
-    device/samsung/matissewifi/kernel:kernel 
+    device/samsung/matissewifi/kernel-f2fs:kernel 
 
 PRODUCT_COPY_FILES += \
 	device/samsung/matissewifi/init.recovery.qcom.rc:root/init.recovery.qcom.rc \
