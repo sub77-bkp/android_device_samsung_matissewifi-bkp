@@ -45,5 +45,9 @@ const char *mr_init_devices[] =
     // for qualcomm overlay - /dev/ion
     "/sys/devices/virtual/misc/ion",
 
+    // Encryption
+    "/sys/devices/virtual/misc/device-mapper",
+    "/sys/devices/virtual/qseecom/qseecom",
+
     NULL
 };
