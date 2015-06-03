@@ -78,15 +78,16 @@ TW_CRYPTO_FS_FLAGS := "0x00000406"
 TW_CRYPTO_KEY_LOC := "footer"
 
 MR_INPUT_TYPE := type_b
-MR_INIT_DEVICES := device/samsung/matissewifi/mr_init_devices.c
+MR_INIT_DEVICES := device/samsung/matissewifi/multirom/mr_init_devices.c
 MR_DPI := hdpi
 MR_DPI_FONT := 160
 MR_FSTAB := device/samsung/matissewifi/twrp.fstab
+MR_USE_MROM_FSTAB := true
 # End of first RAM region is 0x083fffff, so we set it to for example 0x06500000
 MR_KEXEC_MEM_MIN := 0x06500000
 MR_KEXEC_DTB := true
+MR_PIXEL_FORMAT := "RGBX_8888"
 MR_USE_QCOM_OVERLAY := true
-MR_QCOM_OVERLAY_HEADER := device/samsung/matissewifi/msm_mdp.h
-MR_QCOM_OVERLAY_HEADER2 := hardware/qcom/msm8x26/kernel-headers/linux/msm_ion.h
+MR_QCOM_OVERLAY_HEADER := device/samsung/matissewifi/multirom/mr_qcom_overlay.h
 MR_QCOM_OVERLAY_CUSTOM_PIXEL_FORMAT := MDP_RGBX_8888
 
