@@ -68,14 +68,14 @@ BOARD_FLASH_BLOCK_SIZE 				:= 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 TARGET_USERIMAGES_USE_EXT4 			:= true
 TARGET_USERIMAGES_USE_F2FS 			:= true
 
-#TW_INCLUDE_L_CRYPTO := true
-#TW_INCLUDE_CRYPTO_SAMSUNG := true
-#TW_CRYPTO_FS_TYPE := "ext4"
-#TW_CRYPTO_REAL_BLKDEV := "/dev/block/mmcblk0p26"
-#TW_CRYPTO_MNT_POINT := "/data"
-#TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,noauto_da_alloc,journal_async_commit,errors=panic"
-#TW_CRYPTO_FS_FLAGS := "0x00000406"
-#TW_CRYPTO_KEY_LOC := "footer"
+TW_INCLUDE_L_CRYPTO := true
+TW_INCLUDE_CRYPTO_SAMSUNG := true
+TW_CRYPTO_FS_TYPE := "ext4"
+TW_CRYPTO_REAL_BLKDEV := "/dev/block/mmcblk0p26"
+TW_CRYPTO_MNT_POINT := "/data"
+TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,noauto_da_alloc,journal_async_commit,errors=panic"
+TW_CRYPTO_FS_FLAGS := "0x00000406"
+TW_CRYPTO_KEY_LOC := "footer"
 
 MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := device/samsung/matissewifi/mr_init_devices.c
