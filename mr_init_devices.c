@@ -16,7 +16,12 @@ const char *mr_init_devices[] =
     "/sys/devices/msm_sdcc.1/mmc_host/mmc0",
     "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001",
     "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0",
-    "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0*",
+    "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p14", // boot
+    "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p24", // cache
+    "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p2", // modem
+    "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p21", // persist
+    "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p23", // system
+    "/sys/devices/msm_sdcc.1/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p26", // userdata
     "/sys/bus/mmc",
     "/sys/bus/mmc/drivers/mmcblk",
     "/sys/module/mmc_core",
